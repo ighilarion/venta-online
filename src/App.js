@@ -1,44 +1,37 @@
-import './App.css';
+import "./App.css";
+import CategoryList from "./components/category-list/category-list";
 
 const App = () => {
+  const categories = [
+    {
+      id: 1,
+      title: "Hat",
+      img: "https://i.ibb.co/cvpntL1/hats.png"
+    }, 
+    {
+      id: 2,
+      title: "Jackets",
+      img: "https://i.ibb.co/px2tCc3/jackets.png"
+    }, 
+    {
+      id: 3,
+      title: "Sneakers",
+      img: "https://i.ibb.co/0jqHpnp/sneakers.png"
+    }, 
+    {
+      id: 4,
+      title: "Womens",
+      img: "https://i.ibb.co/GCCdy8t/womens.png"
+    }, 
+    {
+      id: 5,
+      title: "Mens",
+      img: "https://i.ibb.co/R70vBrQ/men.png"
+    }]
   return (
-    <div className='categories-container'>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Hats</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Jackets</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Sneakers</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Womens</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-      <div className='category-container'>
-        {/* <img /> */}
-        <div className='category-body-container'>
-          <h2>Mens</h2>
-          <p>Shop Now</p>
-        </div>
-      </div>
-    </div>
+    <CategoryList 
+      categories={categories}
+      />
   );
 };
 
