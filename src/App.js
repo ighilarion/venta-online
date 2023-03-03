@@ -33,6 +33,6 @@ const App = () => {
       categories={categories}
       />
   );
-};
+};//
 
 export default App;
